@@ -1,7 +1,6 @@
 import streamlit as st
 from callBedRock import call_bedrock_service # Import function from callBedRock.py
-
-# Load image
+ # Load image
 image_path = "certExLogo.png" 
 
 # Create a two-column layout
