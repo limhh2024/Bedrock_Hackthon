@@ -4,9 +4,9 @@ import os
 from dotenv import load_dotenv
 
 #Load env
-if load_dotenv('.env'):
-    access_key = os.getenv('ACCESS_KEY') 
-    secret_key = os.getenv('SECRET_KEY')
+#if load_dotenv('.env'):
+access_key = os.getenv('ACCESS_KEY') 
+secret_key = os.getenv('SECRET_KEY')
 
 #session = boto3.Session(profile_name="default", region_name="us-west-2")
 #bedrock_agent_runtime = session.client(service_name='bedrock-agent-runtime', region_name='us-west-2')
