@@ -7,8 +7,6 @@ image_path = "CertExLogo.png"
 col1, col2 = st.columns([2, 8]) 
 
 ############# Streamlit UI #############
-st.title("Certificate Details Chatbot")
-
 # Display image in the first column
 with col1:
     st.image(image_path, width=500)  # Adjust width as needed
