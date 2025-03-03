@@ -5,13 +5,13 @@ from dotenv import load_dotenv
 
 #Load env
 if load_dotenv('.env'):
-    ACCESS_KEY = os.getenv('ACCESS_KEY') 
-    SECRET_KEY = os.getenv('SECRET_KEY')
+    access_key = os.getenv('ACCESS_KEY') 
+    secret_key = os.getenv('SECRET_KEY')
 
 #session = boto3.Session(profile_name="default", region_name="us-west-2")
 #bedrock_agent_runtime = session.client(service_name='bedrock-agent-runtime', region_name='us-west-2')
 #Get the AWS 
-session = boto3.Session(aws_access_key_id=ACCESS_KEY,aws_secret_access_key=SECRET_KEY, region_name="ap-southeast-1")
+session = boto3.Session(aws_access_key_id=access_key,aws_secret_access_key=secret_key, region_name="ap-southeast-1")
 bedrock_agent_runtime = session.client(service_name='bedrock-agent-runtime', region_name='ap-southeast-1')
 
 def call_bedrock_service(question):
